@@ -2,6 +2,7 @@
 
 While Z80 is specified for 5V operation, selected CMOS Z80 are capable of running at 3.3V. This mezzanine board hosts such Z80 plus a 512K RAM and plugs on top of the EPM240 development board. The two-board Z80 computer can run RomWBW. This is link to rev0 of 3V Z80 which does not have the local 3.3V regulator.
 
+![topview](3vz80_rev1_topview.jpg)
 ### Features
 - CMOS Z80 selected for 3.3V operation
 - 512K RAM
@@ -13,6 +14,8 @@ While Z80 is specified for 5V operation, selected CMOS Z80 are capable of runnin
 - RomWBW capable
 - Local 3.3V regulator adjusted to 3.5V
 
+![annotated](3vz80_rev1_mezzanine_annotated_topview.jpg)
+![sideview](3vz80_rev1_with_epm240_side_view.jpg)
 ### Theory of Operation
 Boot from embedded 512-byte flash, etc, etc…place holder.
 
