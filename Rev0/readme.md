@@ -27,9 +27,9 @@ Boot from embedded 512-byte flash, etc, etc…place holder.
 - [Gerber photoplots](3vz80rev0_pcb_gerber.zip) files
 - [EPM240 design files](3vz80_rev0_cpld_v1sd_bootromwbw_release.zip) bootstrap from SD card
   - [RomWBW SD bootstrap code](v1sd_bootromwbw_release.zip) resided in EP240's embedded flash
-- EPM240 design files with fast SD bootstrap (6 seconds), but no RAM disk at drive A
-- Bill of Materials
+- EPM240 design files with [fast SD bootstrap](v1sd_bootromwbw_fast_noramdisk.zip) (6 seconds), but no RAM disk at drive A
+- [Bill of Materials](3vz80_rev0_bom.pdf)
 
 ### Software
-RomWBW image for 3VZ80. The RomWBW will be booted at power up. It takes 23 seconds to load and boot RomWBW from reset.
+[RomWBW SD image](3vz80_rev0_romwbw_sd_image.zip) for 3VZ80. The RomWBW will be booted at power up. It takes 23 seconds to load and boot RomWBW from reset.
 
