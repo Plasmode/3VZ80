@@ -23,10 +23,10 @@ Boot from embedded 512-byte flash, etc, etc…place holder.
 ![boottext](3vz80_rev0_bootsd_romwbw.jpg)
 
 ### Design Files
-- Schematic
-- Gerber photoplot files
-- EPM240 design files
-  - RomWBW SD bootstrap code resided in EP240's embedded flash
+- [Schematic](3vz80_rev0_scm.pdf)
+- [Gerber photoplots](3vz80rev0_pcb_gerber.zip) files
+- [EPM240 design files](3vz80_rev0_cpld_v1sd_bootromwbw_release.zip) bootstrap from SD card
+  - [RomWBW SD bootstrap code](v1sd_bootromwbw_release.zip) resided in EP240's embedded flash
 - EPM240 design files with fast SD bootstrap (6 seconds), but no RAM disk at drive A
 - Bill of Materials
 
