@@ -18,21 +18,17 @@ While Z80 is specified for 5V operation, selected CMOS Z80 are capable of runnin
 ![sideview](3vz80_rev1_with_epm240_side_view.jpg)
 ### Theory of Operation
 Boot from embedded 512-byte flash, etc, etc…place holder.
-
+![romwbwtext](../Rev0/3vz80_rev0_bootsd_romwbw.jpg)
 ### Design Files
-- Schematic
-
-- Gerber photoplot files
-
-- EPM240 design files
-
-- RomWBW SD bootstrap code resided in EP240's embedded flash
-- EPM240 design files with fast SD bootstrap (6 seconds), but no RAM disk at drive A
-
-- Bill of Materials
+- [Schematic](3vz80_rev1_1_scm.pdf)
+- [Gerber photoplots](3vz80_gerber_rev1_1.zip) files
+- [EPM240 design files](../Rev0/3vz80_rev0_cpld_v1sd_bootromwbw_release.zip) bootstrap from SD card
+  - [RomWBW SD bootstrap code](../Rev0/v1sd_bootromwbw_release.zip) resided in EP240's embedded flash
+- EPM240 design files with [fast SD bootstrap](../Rev0/v1sd_bootromwbw_fast_noramdisk.zip) (6 seconds), but no RAM disk at drive A
+- [Bill of Materials](3vz80_rev1_1_bom.pdf)
 
 ### Software
-RomWBW image for 3VZ80. The RomWBW will be booted at power up. It takes 23 seconds to load and boot RomWBW from reset. Due to limited ROM code space in EPM240, only SD cards up to 2G are supported. Another word, SDHC (2-32GB) and SDXC (32GB-2TB) are not supported
+[RomWBW image](https://github.com/Plasmode/3VZ80/blob/main/Rev0/3vz80_rev0_romwbw_sd_image.zip) for 3VZ80. The RomWBW will be booted at power up. It takes 23 seconds to load and boot RomWBW from reset. Due to limited ROM code space in EPM240, only SD cards up to 2G are supported. Another word, SDHC (2-32GB) and SDXC (32GB-2TB) are not supported
 
 Note, Serial port for RomWBW will work without hardware handshake, however to transfer files using XM.COM in RomWBW will require a serial port with hardware handshake capability and terminal emulation that supports hardware handshake such as TeraTerm. The handshake signal needs to be CTS (not DTR). Picture below shows modifications to the common 6-pin CP2102 USB-serial adapter to enable hardware handshake.
 
