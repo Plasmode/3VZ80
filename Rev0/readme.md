@@ -4,7 +4,7 @@
 ### Introduction
 While Z80 is specified for 5V operation, selected CMOS Z80 are capable of running at 3.3V. This mezzanine board hosts such Z80 plus a 512K RAM and plugs on top of the EPM240 development board. The two-board Z80 computer can run RomWBW.
 
-www.retrobrewcomputers.org_lib_plugins_ckgedit_fckeditor_userfiles_image_builderpages_plasmo_epm240dev_3vz80_dsc_77000531.jpg
+![rev0topview](3vz80_rev0_topview.jpg)
 
 ### Features
 - CMOS Z80 selected for 3.3V operation
